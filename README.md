@@ -1,8 +1,4 @@
-# Ansible setup
+# Ansible
 
 
-
-Installation :
-
-    sudo apt-add-repository ppa:ansible/ansible
     
