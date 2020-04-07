@@ -1,4 +1,6 @@
-- hosts: linux01 ## Name server thats you put in /etc/ansible/hosts
+##### create a playbook on vi or nano ###
+
+- hosts: linux01 ## Put the server name that you put in /etc/ansible/hosts
   tasks:
       - name: Create file
         file: path=/tmp/yallo state=touch
