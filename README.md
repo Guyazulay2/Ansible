@@ -29,6 +29,9 @@ Checking the hosts :
 
     ansible all -m ping
 
-
-
+to run a playbook :
+    ansible-playbook -i hosts [file name.yml]
+    
+    
+    
 ### EOF ### 
