@@ -21,5 +21,14 @@
     ssh-keygen -t rsa ### create the keygen
     ssh-copy-id [Server - IP] ### exchange
     
+show the hosts :
+
+    ansible --list-host all 
     
+Checking the hosts :
+
+    ansible all -m ping
+
+
+
 ### EOF ### 
