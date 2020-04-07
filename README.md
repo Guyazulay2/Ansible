@@ -18,7 +18,8 @@
 
 # Step 4 
     Key exchange,
-    ssh-copy-id [Server - IP]
+    ssh-keygen -t rsa ### create the keygen
+    ssh-copy-id [Server - IP] ### exchange
     
     
 ### EOF ### 
