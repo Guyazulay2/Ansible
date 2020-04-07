@@ -1,0 +1,4 @@
+- hosts: linux01 ## Name server thats you put in /etc/ansible/hosts
+  tasks:
+      - name: Create file
+        file: path=/tmp/yallo state=touch
