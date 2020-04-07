@@ -1,0 +1,27 @@
+#### Some basic playbooks
+
+(1)
+
+---
+- hosts: all
+  tasks:
+      - name: install apache
+        apt:
+           name: apache2
+           state: latest
+        become: yes
+      - name: index.html
+        copy:
+           content: "this is ansible playbook"
+           dest: /var/www/html/index.hrml
+        become: yes
+      - name: restart apache2
+        service: 
+             name: apache2
+             staet: restarted
+
+
+####################################
+
+(2)
+
