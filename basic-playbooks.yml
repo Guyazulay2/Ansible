@@ -15,13 +15,17 @@
            content: "this is ansible playbook"
            dest: /var/www/html/index.hrml
         become: yes
-      - name: restart apache2
-        service: 
-             name: apache2
-             staet: restarted
-
 
 ####################################
 
 (2)
 
+---
+- hosts: all
+  tasks:
+    - name: ensure nginx is at the latest version
+      apt: name=nginx state=latest
+    - name: start nginx
+      service:
+          name: nginx
+          state: started
