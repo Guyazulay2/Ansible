@@ -33,6 +33,16 @@ to run a playbook :
 
     ansible-playbook -i hosts [file name.yml]
     
+running you playbook little -k for ssh password, big -K for sudo password : 
+
+    ansible-playbook -i hosts playbook.yml -k -K
     
+Setting up passwordless sudo
+
+    nano /etc/sudoer
+
+add line at the end of the file and replace guy with your user :
+
+    guy ALL=(ALL) NOPASSWD:ALL
     
 ### EOF ### 
