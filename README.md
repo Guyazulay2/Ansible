@@ -20,5 +20,5 @@
     Key exchange,
     ssh-copy-id [Server - IP]
     
-# Step 5 
     
+### EOF ### 
