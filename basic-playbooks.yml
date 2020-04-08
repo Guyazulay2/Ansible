@@ -29,3 +29,18 @@
       service:
           name: nginx
           state: started
+ 
+#############################################
+
+(3)
+---
+- name: My first script ### name os the script
+  hosts: linux01 #### my hosts
+  tasks:
+    - name: create a new folder under Desktop
+      file:
+        path: /home/guy/Desktop/newfolder #### Where you want the folder to be
+        state: directory
+        mode: 0755
+
+
