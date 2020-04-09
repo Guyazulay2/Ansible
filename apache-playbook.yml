@@ -1,5 +1,4 @@
-#### Some basic playbooks
-
+#### basic playbook
 (1)
 
 ---
@@ -17,19 +16,5 @@
         become: yes
 
 ####################################
-
- 
-#############################################
-
-(3)
----
-- name: My first script ### name os the script
-  hosts: linux01 #### my hosts
-  tasks:
-    - name: create a new folder under Desktop
-      file:
-        path: /home/guy/Desktop/newfolder #### Where you want the folder to be
-        state: directory
-        mode: 0755
 
 
