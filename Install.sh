@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo "<< add-repository >> "
 sudo apt-add-repository ppa:ansible/ansible
 
