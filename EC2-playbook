@@ -1,0 +1,18 @@
+#### A simple playbook how to start/stop/teminate a machine on AWS ####
+
+
+- hosts: [name thats you put in /etc/ansible/hosts]
+  tasks:
+  - name: Gather facts
+    action: ec2_facts
+    
+  - name: Terminate/start/stop server instance 
+    local_action:
+        module: ec2
+        region: us-east-2 
+        instance_ids: ['i-0f765d1598068a426'] ## Put your instance id
+        state: start/stop/absent 
+        
+        
+ Run : ansible-playbook -i hosts [Your playbook name]
+##############
