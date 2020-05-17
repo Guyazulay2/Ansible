@@ -5,8 +5,6 @@
 while [ "true" == "true" ]
 do
 
-
-
 echo "
 (1) | Install ansible on this computer
 (2) | Install ansible on slave
