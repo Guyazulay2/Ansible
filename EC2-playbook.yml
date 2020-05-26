@@ -14,5 +14,5 @@
         state: start/stop/absent 
         
         
- Run : ansible-playbook -i hosts [Your playbook name]
+ Run : ansible-playbook -b -i hosts [Your playbook name]
 ##############
