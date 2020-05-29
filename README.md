@@ -47,7 +47,7 @@ add line at the end of the file and replace 'guy' with your user :
     
     
     
-Disable host key checking :
+Disable host key checking (EC2) :
     
     (1) sudo nano ansible.cfg
     (2) allow host_key_checking = False
