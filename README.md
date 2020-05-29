@@ -3,7 +3,7 @@
 
 # Step 1 
     Installing Ansible,
-    go to my repository and pull the "install.sh" script.
+    go to my repository and pull the "install_ansible.sh" script.
     
     
 # Step 2 
