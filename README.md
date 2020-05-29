@@ -41,8 +41,18 @@ Setting up passwordless sudo
 
     nano /etc/sudoer
 
-add line at the end of the file and replace guy with your user :
+add line at the end of the file and replace 'guy' with your user :
 
     guy ALL=(ALL) NOPASSWD:ALL
+    
+    
+    
+Disable host key checking :
+    
+    (1) sudo nano ansible.cfg
+    (2) allow host_key_checking = False
+    
+    
+    
     
 ### EOF ### 
