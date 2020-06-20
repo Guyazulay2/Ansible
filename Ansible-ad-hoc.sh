@@ -1,10 +1,7 @@
 #!/bin/bash
 
-
-
 while [ "true" == "true" ]
 do
-
 echo "
 (1) | Install ansible on this computer
 (2) | Install ansible on slave
@@ -105,6 +102,6 @@ elif [ $i == "7" ]; then
 else
 	echo "Enter 1 - 7 only !"
 
-
+done
 fi
 
