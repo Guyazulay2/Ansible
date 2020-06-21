@@ -39,7 +39,7 @@ running you playbook little -k for ssh password, big -K for sudo password :
     
 Setting up passwordless sudo
 
-    nano /etc/sudoer
+    nano /etc/sudoers
 
 add line at the end of the file and replace 'guy' with your user :
 
