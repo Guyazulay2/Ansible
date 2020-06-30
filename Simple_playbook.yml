@@ -4,13 +4,13 @@
   tasks: 
   - name: install apache
     apt: 
-       name: apache
-       state: present
+      name: apache
+      state: present
        
   - name: start apache
     service: 
-       name: apache
-       state: start  
+      name: apache
+      state: start  
 
 - name: task 2
   hosts: databaseservers
