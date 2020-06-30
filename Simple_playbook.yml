@@ -1,0 +1,22 @@
+---
+- name: task 1
+  hosts: webservers
+  tasks: 
+  - name: install apache
+    apt: 
+       name: apache
+       state: present
+       
+  - name: start apache
+    service: 
+       name: apache
+       state: start  
+
+- name: task 2
+  hosts: databaseservers
+  tasks: 
+  - name: install MySQL
+    apt:
+      name: MySQL
+      state: present
+
